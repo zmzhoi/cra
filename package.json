@@ -1,0 +1,36 @@
+{
+  "name": "create-react-app",
+  "private": true,
+  "description": "React app creator.",
+  "author": "zmzhoi",
+  "license": "MIT",
+  "homepage": "https://github.com/zmzhoi/create-react-app#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zmzhoi/create-react-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zmzhoi/create-react-app/issues"
+  },
+  "scripts": {
+    "format": "prettier --check \"**/*.(ts|tsx|js|jsx|json|md)\"",
+    "format:fix": "prettier --write \"**/*.(ts|tsx|js|jsx|json|md)\"",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "changeset publish",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/runtime": "^7.20.1",
+    "@changesets/cli": "^2.25.2",
+    "eslint": "^8.28.0",
+    "husky": "^8.0.2",
+    "prettier": "^2.8.0",
+    "typescript": "^4.9.3"
+  },
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ]
+}
