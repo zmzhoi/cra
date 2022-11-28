@@ -1,6 +1,6 @@
 {
   "name": "@zmzhoi/eslint-config-react-app",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Eslint sharable config for react app.",
   "main": "index.js",
   "keywords": [
