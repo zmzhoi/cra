@@ -1,0 +1,5 @@
+---
+'template': minor
+---
+
+Created template.

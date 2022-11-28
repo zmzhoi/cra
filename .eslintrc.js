@@ -5,4 +5,8 @@ module.exports = {
     node: true,
     es6: true,
   },
+  rules: {
+    'no-unused-vars': 'warn',
+  },
+  ignorePatterns: ['dist'],
 };

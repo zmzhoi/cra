@@ -1,5 +1,5 @@
 {
-  "name": "create-react-app",
+  "name": "cra",
   "private": true,
   "description": "React app creator.",
   "author": "zmzhoi",
@@ -13,6 +13,7 @@
     "url": "https://github.com/zmzhoi/create-react-app/issues"
   },
   "scripts": {
+    "lint": "eslint packages --ext .js,.jsx,.ts,.tsx",
     "format": "prettier --check \"**/*.(ts|tsx|js|jsx|json|md)\"",
     "format:fix": "prettier --write \"**/*.(ts|tsx|js|jsx|json|md)\"",
     "changeset": "changeset",

@@ -1,16 +1,4 @@
-# @zmzhoi/cra
-
-> ❗️ Still in progress
-
-## Get Started
-
-```sh
-npx @zmzhoi/cra example
-cd example
-npm start
-```
-
-> github 페이지에서 template을 생성하시려면 [여기](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template#creating-a-repository-from-a-template)를 참고해 주세요.
+# React app
 
 ## Tech Stack
 
