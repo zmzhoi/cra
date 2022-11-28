@@ -1,0 +1,48 @@
+name: Release Workflow
+# .changeset, packages 디렉토리의 변경사항들이 main 브렌치에 push될때 이벤트를 실행한다.
+on:
+  push:
+    paths:
+      - '.changeset/**'
+      - 'packages/**'
+    branches:
+      - main
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      # 체크아웃
+      - name: Checkout branch
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      # Node.js 셋팅
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      # 빌드 및 테스트를 위해서 의존성을 설치한다.
+      - name: Install dependencies
+        run: npm ci
+        env:
+          CI: true
+      # 배포를 위해 .npmrc 파일을 생성하고 인증 토큰을 추가한다.
+      - name: Configure npm
+        run: |
+          cat << EOF > "$HOME/.npmrc"
+            //registry.npmjs.org/:_authToken=$NPM_TOKEN
+          EOF
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      # Changesets에서 제공하는 Action을 사용할 수 있다.
+      # NPM에 배포, Git 태그 생성 등의 작업을 수행한다.
+      - name: Create release Pull Request or publish to NPM
+        id: changesets
+        uses: changesets/action@v1
+        with:
+          publish: npm run release
+          commit: 'ci(changesets): Version packages.'
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
