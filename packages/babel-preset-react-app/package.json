@@ -1,5 +1,5 @@
 {
-  "name": "@zmzhoi/babel-preset-react",
+  "name": "@zmzhoi/babel-preset-react-app",
   "version": "0.0.1",
   "description": "Babel preset for react.",
   "main": "index.js",
