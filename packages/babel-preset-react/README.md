@@ -75,4 +75,4 @@ npm i -D @zmzhoi/babel-preset-react
 
 ## LICENSE
 
-[MIT.](LICENSE)
+[MIT.](../../LICENSE)
