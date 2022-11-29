@@ -1,6 +1,6 @@
 {
   "name": "@zmzhoi/babel-preset-react-app",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Babel preset for react app.",
   "main": "index.js",
   "keywords": [
