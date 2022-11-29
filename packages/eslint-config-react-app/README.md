@@ -1,15 +1,15 @@
-# @zmzhoi/eslint-config-react
+# @zmzhoi/eslint-config-react-app
 
-> This package is a eslint sharable config for `React` project.
+> Eslint sharable config for react project.
 
-`eslint@8` is required as a peer.
+- `eslint@8` is required as a peer.
 
 ## Usage
 
 Installation:
 
 ```
-  npm install -D @zmzhoi/eslint-config-react
+  npm install -D @zmzhoi/eslint-config-react-app
 ```
 
 Then create `.eslintrc.js` file with following contents in the root folder of your project:
@@ -18,7 +18,7 @@ Then create `.eslintrc.js` file with following contents in the root folder of yo
 
 ```
 module.exports = {
-  extends: ['@zmzhoi/eslint-config-react'],
+  extends: ['@zmzhoi/eslint-config-react-app'],
   rules: {
     // Add rules that you want to overwrite
   }

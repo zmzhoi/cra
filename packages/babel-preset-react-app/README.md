@@ -1,11 +1,11 @@
-# @zmzhoi/babel-preset-react
+# @zmzhoi/babel-preset-react-app
 
-> React 프로젝트에서 사용하는 Babel preset 입니다.
+> Babel preset for react project.
 
 ## Installation
 
 ```
-npm i -D @zmzhoi/babel-preset-react
+npm i -D @zmzhoi/babel-preset-react-app
 ```
 
 ## Usage
@@ -14,7 +14,7 @@ npm i -D @zmzhoi/babel-preset-react
 
 ```
 {
-  "presets": ["@zmzhoi/babel-preset-react"]
+  "presets": ["@zmzhoi/babel-preset-react-app"]
 }
 ```
 
