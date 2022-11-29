@@ -1,0 +1,20 @@
+{
+  "name": "@zmzhoi/cra",
+  "version": "0.0.1",
+  "description": "Create react app command line interface.",
+  "main": "cli.js",
+  "bin": {
+    "@zmzhoi/cra": "./bin/cli.js"
+  },
+  "keywords": [
+    "create-react-app",
+    "cra",
+    "@zmzhoi/cra",
+    "react"
+  ],
+  "author": "zmzhoi",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2"
+  }
+}
