@@ -1,6 +1,6 @@
 {
   "name": "@zmzhoi/cra",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Create react app command line interface.",
   "main": "cli.js",
   "bin": {
