@@ -63,10 +63,8 @@ function main() {
     }
     execSync(`mv packages/template/* ./`);
 
-    execSync('npx rimraf ./packages ./.git');
+    execSync('npx rimraf ./packages ./.git ./CHANGELOG.md');
     console.log(`${chalk.bgBlue.white(' Done. ')}`);
-
-    process.chdir(projectFullPath); // cd입니다 clone을 마친 후 projectPath로 진입
 
     // 2. Install dependencies and Initialize git.
     console.log(`\n${chalk.cyan('⏳ Installing dependencies... (2/2)')}`);
