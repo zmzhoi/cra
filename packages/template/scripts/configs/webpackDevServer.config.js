@@ -7,10 +7,9 @@ const { toSpecifiedHost } = require('../utils');
  * Reference: https://webpack.kr/configuration/dev-server/#root
  * 주요 옵션들은 default 값 이어도 명시적 선언.
  */
-module.exports = function ({ proxy } = {}) {
+module.exports = function ({ proxy, port } = {}) {
   const open = process.env.OPEN_BROWSER !== 'false';
   const host = process.env.HOST || '0.0.0.0';
-  const port = parseInt(process.env.PORT, 10) || 3000;
 
   return {
     allowedHosts: 'auto', // 👀
