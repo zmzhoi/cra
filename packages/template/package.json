@@ -1,8 +1,8 @@
 {
   "name": "template",
   "private": true,
-  "version": "0.2.0",
-  "description": "React app",
+  "version": "1.0.0",
+  "description": "Web application built with @zmzhoi/cra",
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
