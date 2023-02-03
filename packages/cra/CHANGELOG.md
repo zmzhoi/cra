@@ -1,5 +1,23 @@
 # @zmzhoi/cra
 
+## 0.3.0
+
+### Minor Changes
+
+- 675beac: Add.
+
+  - 일부 reset style 적용. (reset margin, padding, list-style)
+
+- ccd3677: Add.
+
+  - eslint no-empty rules 비활성화
+
+### Patch Changes
+
+- 494a4ed: Changes.
+
+  - @cra/template description 수정 및 version 1.0.0 고정
+
 ## 0.2.0
 
 ### Minor Changes
