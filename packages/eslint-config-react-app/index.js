@@ -48,6 +48,7 @@ module.exports = {
 
   // 추가 룰 적용.
   rules: {
+    'no-empty': 'off',
     'react/jsx-filename-extension': ['error', { extensions: ['.jsx'] }],
     'react/display-name': ['off', { ignoreTranspilerName: false }],
     'react-hooks/rules-of-hooks': 'error',
