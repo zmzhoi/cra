@@ -9,8 +9,7 @@
     "test": "node scripts/test.js",
     "format": "prettier --check \"**/*.(js|jsx|mjs|cjs|ts|tsx|mts|cts|json|md)\"",
     "format:fix": "prettier --write \"**/*.(js|jsx|mjs|cjs|ts|tsx|mts|cts|json|md)\"",
-    "lint": "eslint src --ext .js,.jsx,.ts,.tsx && tsc --noEmit",
-    "prepare": "husky install"
+    "lint": "eslint src --ext .js,.jsx,.ts,.tsx && tsc --noEmit"
   },
   "dependencies": {
     "react": "^18.2.0",

@@ -49,7 +49,7 @@ function main() {
     execSync(`git config core.sparsecheckout true`);
     // execSync(`echo "packages/template/*" >> .git/info/sparse-checkout`);
 
-    const hiddenFiles = ['.vscode', '.babelrc.js', '.browserslistrc', '.eslintrc.js', '.gitignore', '.prettierignore', '.prettierrc'];
+    const hiddenFiles = ['.vscode', '.babelrc.js', '.browserslistrc', '.eslintrc.js', '.gitignore', '.prettierignore', '.prettierrc', '.lintstagedrc.js', '.husky/pre-commit'];
 
     for (const file of hiddenFiles) {
       execSync(`echo "packages/template/${file}" >> .git/info/sparse-checkout`);
@@ -74,6 +74,7 @@ function main() {
     let pkgData = fs.readFileSync('package.json', { encoding: 'utf8' });
     pkgData = JSON.parse(pkgData);
     pkgData.name = projectRealName;
+    pkgData.scripts['prepare'] = 'husky install';
     fs.writeFileSync('package.json', JSON.stringify(pkgData, null, 2));
 
     // 2-2. Install dependencies
