@@ -1,5 +1,13 @@
 # @zmzhoi/cra
 
+## 0.4.1
+
+### Patch Changes
+
+- 5759cf9: Fix.
+
+  - husky 지원 커밋 오류 수정
+
 ## 0.4.0
 
 ### Minor Changes
