@@ -1,5 +1,13 @@
 # @zmzhoi/cra
 
+## 0.4.0
+
+### Minor Changes
+
+- 0beee1b: Feat.
+
+  - husky & lint-staged 지원
+
 ## 0.3.0
 
 ### Minor Changes
